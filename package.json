@@ -1,0 +1,26 @@
+{
+  "name": "playwright",
+  "version": "1.0.0",
+  "description": "testing",
+  "main": "index.js",
+  "scripts": {
+    "test": "tsc && cucumber-js --tags @form './features/*.feature' --import './stepDefs/*.js' -f json:reports/cucumber_report.json && node report.js || node report.js"
+  },
+  "author": "shubham",
+  "license": "ISC",
+  "dependencies": {
+    "@cucumber/cucumber": "^11.0.1",
+    "cucumber": "^6.0.7",
+    "moment-timezone": "^0.5.45",
+    "multiple-cucumber-html-reporter": "^3.8.0",
+    "playwright": "^1.47.2",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.6.2"
+  },
+  "devDependencies": {
+    "@types/chai": "^4.2.0",
+    "@types/cucumber": "^7.0.0",
+    "@types/node": "^22.7.4",
+    "chai": "^4.2.0"
+  }
+}
